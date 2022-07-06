@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xzy.model">
+    <!--获取登陆接口case的全表数据-->
+    <select id="selectAllLoginCase" resultType="com.xzy.model.LoginCase">
+        select * from loginCase;
+    </select>
+
+    <!--获取添加用户接口case的全表数据-->
+    <select id="selectAllAddUserCase" resultType="com.xzy.model.AddUserCase">
+        select * from addUserCase;
+    </select>
+
+    <!--获取用户列表case的全表数据-->
+    <select id="selectAllUserListCase" parameterType="Integer" resultType="com.xzy.model.GetUserListCase">
+        select * from getUserListCase;
+    </select>
+
+
+    <!--获取用户列表-->
+    <select id="getUserList" parameterType="com.xzy.model.GetUserListCase" resultType="com.xzy.model.User">
+        select * from user
+        <trim prefix="WHERE" prefixOverrides="and">
+            <if test="null !=userName and ''!=userName">
+                AND userName=#{userName}
+            </if>
+            <if test="null !=sex and ''!=sex">
+                AND sex=#{sex}
+            </if>
+            <if test="null !=age and ''!=age">
+                AND age=#{age}
+            </if>
+        </trim>
+        ;
+    </select>
+
+</mapper>

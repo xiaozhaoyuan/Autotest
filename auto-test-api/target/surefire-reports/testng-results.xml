@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="用户管理系统测试套件" duration-ms="1221" started-at="2022-07-03T05:15:01Z" finished-at="2022-07-03T05:15:02Z">
+    <groups>
+      <group name="loginTrue">
+        <method signature="LoginTest.login([Lcom.xzy.model.LoginCase;)[pri:0, instance:com.xzy.cases.LoginTest@7e0b0338]" name="login" class="com.xzy.cases.LoginTest"/>
+      </group> <!-- loginTrue -->
+    </groups>
+    <test name="用户管理系统测试用例" duration-ms="1221" started-at="2022-07-03T05:15:01Z" finished-at="2022-07-03T05:15:02Z">
+      <class name="com.xzy.cases.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.xzy.cases.LoginTest@7e0b0338]" name="beforeTest" is-config="true" duration-ms="376" started-at="2022-07-03T13:15:01Z" description="测试准备工作，获取HttpClient对象" finished-at="2022-07-03T13:15:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login([Lcom.xzy.model.LoginCase;)[pri:0, instance:com.xzy.cases.LoginTest@7e0b0338]" name="login" duration-ms="117" started-at="2022-07-03T13:15:02Z" description="用户登陆成功接口测试" data-provider="data" finished-at="2022-07-03T13:15:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lcom.xzy.model.LoginCase;@6cb6decd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login([Lcom.xzy.model.LoginCase;)[pri:0, instance:com.xzy.cases.LoginTest@7e0b0338]" name="login" duration-ms="6" started-at="2022-07-03T13:15:02Z" description="用户登陆成功接口测试" data-provider="data" finished-at="2022-07-03T13:15:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lcom.xzy.model.LoginCase;@c7045b9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.xzy.cases.LoginTest@7e0b0338]" name="afterTest" is-config="true" duration-ms="1" started-at="2022-07-03T13:15:02Z" finished-at="2022-07-03T13:15:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.xzy.cases.LoginTest -->
+      <class name="com.xzy.cases.GetUserInfoListTest">
+        <test-method name="getUserListInfo" signature="getUserListInfo([Lcom.xzy.model.GetUserListCase;)[pri:0, instance:com.xzy.cases.GetUserInfoListTest@60c6f5b]" depends-on-groups="loginTrue" status="PASS" duration-ms="122" finished-at="2022-07-03T13:15:02Z" started-at="2022-07-03T13:15:02Z" data-provider="data" description="按条件获取用户列表">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lcom.xzy.model.GetUserListCase;@45a4b042]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserListInfo -->
+        <test-method name="getUserListInfo" signature="getUserListInfo([Lcom.xzy.model.GetUserListCase;)[pri:0, instance:com.xzy.cases.GetUserInfoListTest@60c6f5b]" depends-on-groups="loginTrue" status="PASS" duration-ms="88" finished-at="2022-07-03T13:15:02Z" started-at="2022-07-03T13:15:02Z" data-provider="data" description="按条件获取用户列表">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lcom.xzy.model.GetUserListCase;@16b2bb0c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserListInfo -->
+        <test-method name="getUserListInfo" signature="getUserListInfo([Lcom.xzy.model.GetUserListCase;)[pri:0, instance:com.xzy.cases.GetUserInfoListTest@60c6f5b]" depends-on-groups="loginTrue" status="PASS" duration-ms="41" finished-at="2022-07-03T13:15:02Z" started-at="2022-07-03T13:15:02Z" data-provider="data" description="按条件获取用户列表">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lcom.xzy.model.GetUserListCase;@327af41b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserListInfo -->
+      </class> <!-- com.xzy.cases.GetUserInfoListTest -->
+      <class name="com.xzy.cases.AddUserTest">
+        <test-method name="addUser" signature="addUser([Lcom.xzy.model.AddUserCase;)[pri:0, instance:com.xzy.cases.AddUserTest@617faa95]" depends-on-groups="loginTrue" status="PASS" duration-ms="8" finished-at="2022-07-03T13:15:02Z" started-at="2022-07-03T13:15:02Z" data-provider="data" description="添加用户接口测试">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lcom.xzy.model.AddUserCase;@662706a7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+      </class> <!-- com.xzy.cases.AddUserTest -->
+    </test> <!-- 用户管理系统测试用例 -->
+  </suite> <!-- 用户管理系统测试套件 -->
+</testng-results>

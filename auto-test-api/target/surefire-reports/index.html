@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-用户管理系统测试套件">
+              <span class="suite-name border-passed">用户管理系统测试套件</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-用户管理系统测试套件">
+                    <span>D:\IDEA-workspace-new\auto-test-api\src\main\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-用户管理系统测试套件">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-用户管理系统测试套件">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-用户管理系统测试套件">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-用户管理系统测试套件">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-用户管理系统测试套件">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-用户管理系统测试套件">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-用户管理系统测试套件" class="hide-methods passed suite-用户管理系统测试套件"> (hide)</a> <!-- hide-methods passed suite-用户管理系统测试套件 -->
+                      <a href="#" panel-name="suite-用户管理系统测试套件" class="show-methods passed suite-用户管理系统测试套件"> (show)</a> <!-- show-methods passed suite-用户管理系统测试套件 -->
+                    </span>
+                    <div class="method-list-content passed suite-用户管理系统测试套件">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.xzy.cases.AddUserTest" hash-for-method="addUser([AddUserCase(userName=赵六111, password=zhaozhao, sex=0, age=35, permission=1, isDelete=0, expected=tr...)">addUser([AddUserCase(userName=赵六111, password=zhaozhao, sex=0, age=35, permission=1, isDelete=0, expected=tr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.xzy.cases.GetUserInfoListTest" hash-for-method="getUserListInfo([GetUserListCase(userName=null, age=null, sex=0, expected=getUserList)])">getUserListInfo([GetUserListCase(userName=null, age=null, sex=0, expected=getUserList)])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.xzy.cases.GetUserInfoListTest" hash-for-method="getUserListInfo([GetUserListCase(userName=null, age=25, sex=1, expected=getUserList)])">getUserListInfo([GetUserListCase(userName=null, age=25, sex=1, expected=getUserList)])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.xzy.cases.GetUserInfoListTest" hash-for-method="getUserListInfo([GetUserListCase(userName=qiqiqi, age=null, sex=null, expected=getUserList)])">getUserListInfo([GetUserListCase(userName=qiqiqi, age=null, sex=null, expected=getUserList)])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.xzy.cases.LoginTest" hash-for-method="login([LoginCase(id=2, userName=zhangsanerror, password=123, expected=false)])">login([LoginCase(id=2, userName=zhangsanerror, password=123, expected=false)])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.xzy.cases.LoginTest" hash-for-method="login([LoginCase(id=1, userName=zhangsan, password=123456, expected=true)])">login([LoginCase(id=1, userName=zhangsan, password=123456, expected=true)])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-用户管理系统测试套件 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-用户管理系统测试套件" class="panel 用户管理系统测试套件">
+          <div class="suite-用户管理系统测试套件-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xzy.cases.AddUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser([AddUserCase(userName=赵六111, password=zhaozhao, sex=0, age=35, permission=1, isDelete=0, expected=tr...)">
+                  </a> <!-- addUser([AddUserCase(userName=赵六111, password=zhaozhao, sex=0, age=35, permission=1, isDelete=0, expected=tr...) -->
+                  <span class="method-name">addUser</span>
+                  <span class="parameters">([AddUserCase(userName=赵六111, password=zhaozhao, sex=0, age=35, permission=1, isDelete=0, expected=true)])</span>
+                  <em>
+(添加用户接口测试)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-用户管理系统测试套件-class-passed -->
+          <div class="suite-用户管理系统测试套件-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xzy.cases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login([LoginCase(id=2, userName=zhangsanerror, password=123, expected=false)])">
+                  </a> <!-- login([LoginCase(id=2, userName=zhangsanerror, password=123, expected=false)]) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">([LoginCase(id=2, userName=zhangsanerror, password=123, expected=false)])</span>
+                  <em>
+(用户登陆成功接口测试)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login([LoginCase(id=1, userName=zhangsan, password=123456, expected=true)])">
+                  </a> <!-- login([LoginCase(id=1, userName=zhangsan, password=123456, expected=true)]) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">([LoginCase(id=1, userName=zhangsan, password=123456, expected=true)])</span>
+                  <em>
+(用户登陆成功接口测试)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-用户管理系统测试套件-class-passed -->
+          <div class="suite-用户管理系统测试套件-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xzy.cases.GetUserInfoListTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserListInfo([GetUserListCase(userName=null, age=null, sex=0, expected=getUserList)])">
+                  </a> <!-- getUserListInfo([GetUserListCase(userName=null, age=null, sex=0, expected=getUserList)]) -->
+                  <span class="method-name">getUserListInfo</span>
+                  <span class="parameters">([GetUserListCase(userName=null, age=null, sex=0, expected=getUserList)])</span>
+                  <em>
+(按条件获取用户列表)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserListInfo([GetUserListCase(userName=null, age=25, sex=1, expected=getUserList)])">
+                  </a> <!-- getUserListInfo([GetUserListCase(userName=null, age=25, sex=1, expected=getUserList)]) -->
+                  <span class="method-name">getUserListInfo</span>
+                  <span class="parameters">([GetUserListCase(userName=null, age=25, sex=1, expected=getUserList)])</span>
+                  <em>
+(按条件获取用户列表)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserListInfo([GetUserListCase(userName=qiqiqi, age=null, sex=null, expected=getUserList)])">
+                  </a> <!-- getUserListInfo([GetUserListCase(userName=qiqiqi, age=null, sex=null, expected=getUserList)]) -->
+                  <span class="method-name">getUserListInfo</span>
+                  <span class="parameters">([GetUserListCase(userName=qiqiqi, age=null, sex=null, expected=getUserList)])</span>
+                  <em>
+(按条件获取用户列表)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-用户管理系统测试套件-class-passed -->
+        </div> <!-- panel 用户管理系统测试套件 -->
+        <div panel-name="test-xml-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\IDEA-workspace-new\auto-test-api\src\main\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;用户管理系统测试套件&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.xzy.listener.TestCaseReport&quot;/&gt;
+    &lt;listener class-name=&quot;com.xzy.listener.TestNGListennerSendEmail&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;用户管理系统测试用例&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.xzy.cases.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.xzy.cases.LoginTest --&gt;
+      &lt;class name=&quot;com.xzy.cases.AddUserTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addUser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.xzy.cases.AddUserTest --&gt;
+      &lt;class name=&quot;com.xzy.cases.GetUserInfoListTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getUserListInfo&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.xzy.cases.GetUserInfoListTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 用户管理系统测试用例 --&gt;
+&lt;/suite&gt; &lt;!-- 用户管理系统测试套件 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for 用户管理系统测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">用户管理系统测试用例 (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for 用户管理系统测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">loginTrue</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for 用户管理系统测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_用户管理系统测试套件');
+function tableData_用户管理系统测试套件() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getUserListInfo')
+data.setCell(0, 2, 'com.xzy.cases.GetUserInfoListTest')
+data.setCell(0, 3, 122);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'com.xzy.cases.LoginTest')
+data.setCell(1, 3, 117);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getUserListInfo')
+data.setCell(2, 2, 'com.xzy.cases.GetUserInfoListTest')
+data.setCell(2, 3, 88);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getUserListInfo')
+data.setCell(3, 2, 'com.xzy.cases.GetUserInfoListTest')
+data.setCell(3, 3, 41);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addUser')
+data.setCell(4, 2, 'com.xzy.cases.AddUserTest')
+data.setCell(4, 3, 8);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'login')
+data.setCell(5, 2, 'com.xzy.cases.LoginTest')
+data.setCell(5, 3, 6);
+window.suiteTableData['用户管理系统测试套件']= { tableData: data, tableDiv: 'times-div-用户管理系统测试套件'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 382 ms</span>
+              <div id="times-div-用户管理系统测试套件">
+              </div> <!-- times-div-用户管理系统测试套件 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for 用户管理系统测试套件</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-用户管理系统测试套件" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xzy.cases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">login([LoginCase(id=1, userName=zhangsan, password=123456, expected=true)])</span>
+                <span class="method-start">771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login([LoginCase(id=2, userName=zhangsanerror, password=123, expected=false)])</span>
+                <span class="method-start">890 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xzy.cases.AddUserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addUser([AddUserCase(userName=赵六111, password=zhaozhao, sex=0, age=35, permission=1, isDelete=0, expected=tr...)</span>
+                <span class="method-start">928 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xzy.cases.GetUserInfoListTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getUserListInfo([GetUserListCase(userName=null, age=null, sex=0, expected=getUserList)])</span>
+                <span class="method-start">966 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUserListInfo([GetUserListCase(userName=null, age=25, sex=1, expected=getUserList)])</span>
+                <span class="method-start">1088 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUserListInfo([GetUserListCase(userName=qiqiqi, age=null, sex=null, expected=getUserList)])</span>
+                <span class="method-start">1177 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xzy.cases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">1218 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
